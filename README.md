@@ -13,3 +13,4 @@ It provides the base configuration to integrate with other microservices as Keyc
 
 The following environment variables can be configured:
 - `KEYCLOAK_URL`: the URL to the Keycloak instance (default: `http://localhost:5000`)
+- `KAFKA_URL`: the URL to the Kafka node (default: `http://localhost:29092`)
