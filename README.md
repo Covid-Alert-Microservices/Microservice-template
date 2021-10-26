@@ -7,6 +7,7 @@ It provides the base configuration to integrate with other microservices as Keyc
 
 - Configuration of Spring Security to only accept authenticated request on `/api/**`
 - Authentication of requests with Keycloak
+- Listening and publishing of Kafka topics
 - CI to build the application
 
 ## Environment variables
