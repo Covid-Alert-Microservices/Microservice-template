@@ -13,12 +13,19 @@ repositories {
 }
 
 dependencies {
-    // implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation 'org.springframework.boot:spring-boot-starter-security'
     implementation 'org.springframework.boot:spring-boot-starter-web'
-    implementation 'org.springframework.kafka:spring-kafka'
+
+    // Keycloak
     implementation 'org.keycloak:keycloak-spring-boot-starter:15.0.2'
-    // runtimeOnly 'org.postgresql:postgresql'
+
+    // Kafka
+    implementation 'org.springframework.kafka:spring-kafka'
+
+    // Postgres
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    runtimeOnly 'org.postgresql:postgresql'
+
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testImplementation 'org.springframework.kafka:spring-kafka-test'
     testImplementation 'org.springframework.security:spring-security-test'
