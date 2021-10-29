@@ -18,3 +18,39 @@ The following environment variables can be configured:
 - `POSTGRES_HOST`: the host for the PostgreSQL database (default: `localhost:5432/postgres`)
 - `POSTGRES_USER`: the user for the PostgreSQL database (default: `postgres`)
 - `POSTGRES_PASSWORD`: the password for the PostgreSQL database (default: `postgres`)
+
+## Removing unused parts
+
+### Keycloak
+
+- Delete classes
+  - `MyController`
+  - `KeycloakSecurityConfig`
+- Delete lines
+  - Keycloak related lines in `application.properties`
+  - Keycloak related lines in `build.gradle`
+
+### Kafka
+
+- Delete classes
+  - `KafkaConfig`
+  - `PingPongListener`
+- Delete lines
+  - Kafka related lines in `application.properties` in both `main` and `test` source-sets
+  - Kafka related lines in `build.gradle`
+
+### PostgreSQL
+
+- Delete classes
+  - `Movie`
+  - `MoviesRepositories`
+- Delete lines
+  - Postgres related in `application.properties` in both `main` and `test` source-sets
+  - Postgres related in `build.gradle`
+
+### Redis
+
+- Delete classes
+  - `RedisController`
+- Delete lines
+  - Redis related in `build.gradle`
